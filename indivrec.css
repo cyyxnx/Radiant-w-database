@@ -1,0 +1,72 @@
+body {
+    color: white;
+    font-family: Arial, sans-serif;
+    background-image: url(assets/food1.png);
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #bd904f;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo img {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+nav {
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: rgb(255, 228, 96);
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: rgba(180, 163, 144, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #ffe5b4;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.steps {
+    margin-top: 20px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+}

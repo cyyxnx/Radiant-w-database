@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(assets/food1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    word-spacing: 10px;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #bd904f;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.logo img {
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+nav {
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: rgb(255, 228, 96);
+}
+
+.container {
+    max-width: 90%;
+    margin: 220px auto 120px;
+    padding: 20px;
+}
+
+.images {
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: -2%; /* Adjusted margin to move images down */
+}
+
+.img-column {
+    flex: 0 0 calc(20% - 40px); /* Five columns with spacing */
+    margin: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.img-column:hover img {
+    filter: brightness(50%);
+}
+
+.img-column .recipe-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.img-column:hover .recipe-name {
+    display: block;
+}
+
+.recipe-img {
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    max-width: 100%; /* Adjusted maximum width */
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .img-column {
+        flex: 0 0 calc(50% - 40px); /* Two columns on smaller screens */
+    }
+
+    .container {
+        margin-top: 190px;
+        margin-bottom: 60px;
+    }
+    
+}
